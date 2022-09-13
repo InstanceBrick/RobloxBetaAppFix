@@ -1,3 +1,23 @@
+# Check for multiple instances of the current program (stops errors/overlapping code)
+function numInstances([string]$process)
+{
+    @(get-process -ea silentlycontinue $process).count
+}
+if ((numInstances FixBetaApp) -gt 1) {
+Add-Type -AssemblyName System.Windows.Forms 
+$global:balloon = New-Object System.Windows.Forms.NotifyIcon
+$path = (Get-Process -id $pid).Path
+$balloon.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon($path) 
+$balloon.BalloonTipIcon = [System.Windows.Forms.ToolTipIcon]::Error 
+$balloon.BalloonTipText = 'Multiple instances opened (Please only open 1 instance)'
+$balloon.BalloonTipTitle = "Error!" 
+$balloon.Visible = $true 
+$balloon.ShowBalloonTip(7000)
+    Stop-Process -Name FixBetaApp -Force
+}
+
+
+
 Add-Type -AssemblyName System.Windows.Forms 
 $global:balloon = New-Object System.Windows.Forms.NotifyIcon
 $path = (Get-Process -id $pid).Path
@@ -7,11 +27,6 @@ $balloon.BalloonTipText = 'RobloxBetaFix has Loaded!'
 $balloon.BalloonTipTitle = "Welcome!" 
 $balloon.Visible = $true 
 $balloon.ShowBalloonTip(7000)
-
-
-
-
-
 
 
 $Key = "HKCU:\Software\ROBLOX Corporation\Environments\roblox-player"
