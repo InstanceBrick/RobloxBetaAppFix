@@ -50,5 +50,5 @@ if ($roblox) {
         Set-ItemProperty -Path $Key -Name "LaunchExp" -Value "InBrowser"
     }
 
-    Start-Sleep -Milliseconds 50
+    Start-Sleep -Milliseconds 0
 }
