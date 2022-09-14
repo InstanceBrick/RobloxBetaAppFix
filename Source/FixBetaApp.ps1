@@ -40,7 +40,11 @@ if ($roblox) {
      #Write-Output "Roblox Running Properly"
     }else{
       #Write-Output "Roblox Crash"
-        Stop-Process -Name RobloxPlayerBeta -Force
+Get-Process RobloxPlayerBeta|
+Sort-Object StartTime -Descending|
+Select-Object -Skip 1|
+Stop-Process
+        #Stop-Process -Name RobloxPlayerBeta -Force
     }
 }
     $CurrentValue = (Get-ItemProperty -Path $Key -Name "LaunchExp").LaunchExp
