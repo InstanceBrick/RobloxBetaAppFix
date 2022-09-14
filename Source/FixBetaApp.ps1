@@ -38,15 +38,15 @@ $roblox = Get-Process RobloxPlayerBeta -ErrorAction SilentlyContinue
 if ($roblox) {
     if((get-process RobloxPlayerBeta).Responding){
      #Write-Output "Roblox Running Properly"
-    }else{
-      #Write-Output "Roblox Crash"
-Get-Process RobloxPlayerBeta|
-Sort-Object StartTime -Descending|
-Select-Object -Skip 1|
-Stop-Process
+        }else{
+        #Write-Output "Roblox Crash"
+            Get-Process RobloxPlayerBeta|
+            Sort-Object StartTime -Descending|
+            Select-Object -Skip 1|
+            Stop-Process
         #Stop-Process -Name RobloxPlayerBeta -Force
+        }
     }
-}
     $CurrentValue = (Get-ItemProperty -Path $Key -Name "LaunchExp").LaunchExp
     if ($CurrentValue -eq "InApp")
     {
