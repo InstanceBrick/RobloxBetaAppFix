@@ -145,8 +145,6 @@ $Menu_Exit.add_Click({
     $roblox = Get-Process RobloxPlayerBeta -ErrorAction SilentlyContinue
     #Basically we are getting RobloxPlayerBeta and checking if its running, then if it starts to not respond we close the program
     if ($roblox) {
-       
-       
         if((get-process RobloxPlayerBeta).Responding){
          #Write-Output "Roblox Running Properly"
             }else{
