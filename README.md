@@ -13,5 +13,6 @@ Current features (v1.0.4)
 - Auto Updater (if you download that EXE)
 - Shows how many instances of rolox are Open (Context menu)
 - Kill Roblox option (Context Menu)
+- VERY low CPU usage (Task manager says 0% lol)
 
 I will continue to post updates in the releases if you dont want to download the auto updater (but it is recommended as I only upload stable versions of the application.)
