@@ -1,3 +1,8 @@
+# THIS IS MEANT TO RUN THROUGH AN EXE FILE (MAY BREAK IF YOU RUN THE RAW SCRIPT)
+# You can compile this script using ps2exe or download my pre-compiled version in releases!
+# https://github.com/InstanceBrick/RobloxBetaAppFix/releases/tag/v2.0.0up - Auto updater
+
+
 # Check for multiple instances of the current program (stops errors/overlapping code)
 
 function numInstances([string]$process)
