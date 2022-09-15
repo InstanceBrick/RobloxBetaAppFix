@@ -9,4 +9,5 @@ Current features (v1.0.4)
 - Fixed Roblox crashing upon leave
 - Returns roblox back to browser state and removes that damn app (ofc lol)
 - Auto Updater (if you download that EXE)
+
 I will continue to post updates in the releases if you dont want to download the auto updater (but it is recommended as I only upload stable versions of the application.)
