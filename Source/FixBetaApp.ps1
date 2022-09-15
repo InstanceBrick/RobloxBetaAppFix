@@ -118,18 +118,16 @@ $Main_Tool_Icon.Add_Click({
 
 $Menu_Exit.add_Click({
     $Main_Tool_Icon.Visible = $false
-Stop-Job -Name "Loop"
-$global:balloon = New-Object System.Windows.Forms.NotifyIcon
-$path = (Get-Process -id $pid).Path
-$balloon.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon($path) 
-$balloon.BalloonTipIcon = [System.Windows.Forms.ToolTipIcon]::None 
-$balloon.BalloonTipText = 'RobloxBetaFix has closed!'
-$balloon.BalloonTipTitle = "Goodbye!" 
-$balloon.Visible = $true 
-$balloon.ShowBalloonTip(7000)
-
+	Stop-Job -Name "Loop"
+	$global:balloon = New-Object System.Windows.Forms.NotifyIcon
+	$path = (Get-Process -id $pid).Path
+	$balloon.Icon = [System.Drawing.Icon]::ExtractAssociatedIcon($path) 
+	$balloon.BalloonTipIcon = [System.Windows.Forms.ToolTipIcon]::None 
+	$balloon.BalloonTipText = 'RobloxBetaFix has closed!'
+	$balloon.BalloonTipTitle = "Goodbye!" 
+	$balloon.Visible = $true 
+	$balloon.ShowBalloonTip(7000)
     Stop-Process -Name FixBetaApp -Force
-
  })
  
  $Menu_Kill.add_Click({
@@ -169,7 +167,7 @@ $balloon.ShowBalloonTip(7000)
     
         Start-Sleep -Milliseconds 20
     }
-    }
+}
 Start-Job -ScriptBlock $WhLoop -Name "Loop"
 
 
