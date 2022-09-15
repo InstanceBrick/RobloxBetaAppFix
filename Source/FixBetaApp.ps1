@@ -1,6 +1,6 @@
 # THIS IS MEANT TO RUN THROUGH AN EXE FILE (MAY BREAK IF YOU RUN THE RAW SCRIPT)
 # You can compile this script using ps2exe or download my pre-compiled version in releases!
-# https://github.com/InstanceBrick/RobloxBetaAppFix/releases/tag/v2.0.0up - Auto updater
+# https://github.com/InstanceBrick/RobloxBetaAppFix/releases - Releases (Auto updater recommended!)
 $Global:IsEnabled = $true
 function numInstances([string]$process) {
     @(get-process -ea silentlycontinue $process).count
