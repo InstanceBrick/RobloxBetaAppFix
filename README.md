@@ -6,7 +6,7 @@ Big thanks to pobammer his solution is here - https://gist.github.com/howmanysma
 
 I just compiled it into a EXE to make it easier along with some of my own added on features.
 
-Current features (v1.0.4)
+Current features (v1.0.5)
 - Custom Context Menu (System Tray)
 - Fixed Roblox crashing upon leave
 - Returns roblox back to browser state and removes that damn app (ofc lol)
