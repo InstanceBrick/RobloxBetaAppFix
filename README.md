@@ -11,7 +11,7 @@ Current features (v1.0.5)
 - Fixed Roblox crashing upon leave
 - Returns roblox back to browser state and removes that damn app (ofc lol)
 - Auto Updater (if you download that EXE)
-- Shows how many instances of rolox are Open (Context menu)
+- Shows how many instances of Roblox are Open (Context menu)
 - Kill Roblox option (Context Menu)
 - VERY low CPU usage (Task manager says 0% lol)
 
