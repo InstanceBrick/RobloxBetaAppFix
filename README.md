@@ -1,4 +1,4 @@
-# RobloxBetaAppFix/Remove Roblox Beta App
+# Disable Beta App/RobloxBetaAppFix/Remove Roblox Beta App
 
 New roblox beta app messing up VR and all that so I quickly threw this together lol
 
