@@ -1,4 +1,5 @@
-# Disable Beta App/RobloxBetaAppFix/Remove Roblox Beta App
+# BROKEN! roblox patched this method sadly, i'll try to find a new bypass soon!
+Disable Beta App/RobloxBetaAppFix/Remove Roblox Beta App
 
 New roblox beta app messing up VR and all that so I quickly threw this together lol
 
